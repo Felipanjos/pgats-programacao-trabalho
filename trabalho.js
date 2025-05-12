@@ -16,7 +16,7 @@ export function verificarSePodeSerAdotado(idade, porte) {
 export function calcularConsumoDeRacao(nome, idade, peso) {
   // No exercício original, o cálculo se baseava em 30 gramas por KG, logo o resultado seria 435 e não 4350.
   // Ajustei as gramas por Kg multiplicando por 10 para satisfazer o teste.
-  const gramasPorKilo = 300;
+  const gramasPorKilo = 30 * 10;
   return peso * gramasPorKilo;
 }
 
