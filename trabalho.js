@@ -21,16 +21,22 @@ export function calcularConsumoDeRacao(nome, idade, peso) {
 }
 
 export function decidirTipoDeAtividadePorPorte(porte) {
+  let atividade;
   switch (porte) {
     case 'pequeno':
-      return 'brincar dentro de casa';
+      atividade = 'brincar dentro de casa';
+      break;
     case 'medio':
-      return 'caminhada no quarteirao';
+      atividade = 'caminhada no quarteirao';
     case 'grande':
-      return 'correr no parque';
+      atividade = 'correr no parque';
+      break;
     default:
-      return 'porte invalido';
+      atividade = 'porte invalido';
+      break;
   }
+
+  return atividade;
 }
 
 export async function buscarDadoAsync() {
