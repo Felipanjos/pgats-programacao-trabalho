@@ -13,5 +13,5 @@ jobs:
       - name: Instalando dependências
         run: yarn
 
-      - name: Executando testes e2e
+      - name: Executando testes unitários
         run: npx mocha ./testes/trabalho-final.js
