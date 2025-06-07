@@ -14,4 +14,4 @@ jobs:
         run: yarn
 
       - name: Executando testes unitários
-        run: npx mocha ./testes/trabalho-final.js
+        run: yarn run test
