@@ -1,0 +1,17 @@
+name: 'Execução Manual'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalando dependências
+        run: yarn
+
+      - name: Executando testes e2e
+        run: npx mocha ./testes/trabalho-final.js
