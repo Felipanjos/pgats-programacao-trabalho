@@ -11,7 +11,7 @@ import {
 describe('Testes da disciplina - fundamentos JS', () => {
   
   it('QUANDO informar um nome para o Pet, DEVE ser impresso na tag com letras maiúsculas', () => {
-    assert.strictEqual(geradorDeTagsDeIdentificacao('Pantera'), 'PANTERA');
+    assert.strictEqual(geradorDeTagsDeIdentificacao('Pantea'), 'PANTERA');
   });
 
   it('QUANDO a idade = 1 + porte M, DEVE ser permitida a adoção', () => {
